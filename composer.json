@@ -1,0 +1,32 @@
+{
+    "name": "mijnpartnergroep-nl/whmcs-sidn-suggestion-tool",
+    "description": "This module allows you to show accurate .nl domain suggestions to your customers",
+    "keywords": [
+        "whmcs",
+        "SIDN",
+        "suggestion tool",
+        ".nl",
+        "domains"
+    ],
+    "homepage": "https:\/\/www.mijnpartnergroep.nl\/",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "MijnPartnerGroep.nl",
+            "email": "info@mijnpartnergroep.nl",
+            "homepage": "https:\/\/www.mijnpartnergroep.nl\/",
+            "role": "Developer"
+        }
+    ],
+    "support": {
+        "email": "support@mijnpartnergroep.nl",
+        "forum": "https://github.com//MijnPartnerGroep-nl//whmcs-sidn-suggestion-tool/issues",
+        "wiki": "https://github.com//MijnPartnerGroep-nl//whmcs-sidn-suggestion-tool/wiki"
+    },
+    "require": {
+        "mijnpartnergroep-nl/sidn-suggestion-api-php": "@stable"
+    },
+    "config": {
+        "vendor-dir": "modules/addons/sidn_suggestion_tool/lib/vendor"
+    }
+}

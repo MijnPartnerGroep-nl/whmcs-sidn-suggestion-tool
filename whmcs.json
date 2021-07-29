@@ -1,0 +1,31 @@
+{
+    "schema": "1.0",
+    "type": "whmcs-addons",
+    "name": "sidn-suggestion-tool",
+    "license": "MIT",
+    "category": "addon",
+    "description": {
+        "name": "SIDN Suggestion Tool",
+        "tagline": "This module allows you to show accurate .nl domain suggestions to your customers",
+        "long": "This module communicates with SIDN's domain suggestion api to suggest available .nl domains to your customer based on their provided input.",
+        "features": [
+            "Search for domain suggestions using SIDN's Suggestion tool"
+        ]
+    },
+    "logo": {
+        "filename": "https://images.ctfassets.net\/yj8364fopk6s\/4ld0TQ8iVAGymxO1uCxYbg\/6bf26210c7ba4927f6dd13f8b62e3f23\/SIDN_logo_fc.svg"
+    },
+    "support": {
+        "homepage": "https:\/\/www.mijnpartnergroep.nl\/", 
+        "learn_more": "https:\/\/github.com\/MijnPartnerGroep-nl\/whmcs-sidn-suggestion-tool\/", 
+        "email": "info@mijnpartnergroep.nl", 
+        "support_url": "https:\/\/github.com\/MijnPartnerGroep-nl\/whmcs-sidn-suggestion-tool\/issues/",
+        "docs_url": "https:\/\/github.com\/MijnPartnerGroep-nl\/whmcs-sidn-suggestion-tool\/wiki\/"
+    },
+    "authors": [
+        {
+            "name": "MijnPartnerGroep.nl",
+            "homepage": "https:\/\/www.mijnpartnergroep.nl\/"
+        }
+    ]
+}
