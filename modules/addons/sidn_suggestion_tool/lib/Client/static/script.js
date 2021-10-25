@@ -18,7 +18,6 @@ $(()=>{
                     let suggestion = data.suggestions[s];
                     let item = container.querySelector(".list-group-item").cloneNode(true);
                     
-                    console.log(item);
                     item.classList.remove("w-hidden");
 
                     item.querySelector(".domain").innerText = suggestion.domain;
