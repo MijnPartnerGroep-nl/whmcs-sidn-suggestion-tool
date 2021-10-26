@@ -7,12 +7,12 @@ use \Sidn\Suggestion\Api\SidnSuggestionApiClient;
 
 
 /**
- * Sample Client Area Controller
+ * Client Area Controller: Implementation for the SIDN Suggestion Api
  */
 class Controller {
 
     /**
-     * fetch action.
+     * Action called from the JavaScript to fetch the suggested domains.
      *
      * @return array json encoded array
      */
@@ -39,14 +39,14 @@ class Controller {
                     $auth = $sidnApi->authenticate->Authenticate($client_id->value, $client_secret->value);
                     $sidnApi->setAccessToken($auth->access_token);
                     
-                    $suggestions = array();
+                    $suggestions = [];
                     $data = $sidnApi->suggestion->Search($data["lookupTerm"], $result_amount->value);
                     foreach($data->suggestions as $s) {
-                        array_push($suggestions, array(
+                        array_push($suggestions, [
                             "domain" => $s["domain"],
                             "price" => $domainprice->msetupfee,
                             "extension" => ".nl"
-                        ));
+                        ]);
                     }
                     $result = [
                         "suggestions" => $suggestions,
@@ -69,11 +69,9 @@ class Controller {
     }
 
     /**
-     * Secret action.
+     * Action used as a script src to load the static content of a JavaScript file
      *
-     * @param array $vars Module configuration parameters
-     *
-     * @return array
+     * @return string Content of JavaScript file
      */
     public function static()
     {

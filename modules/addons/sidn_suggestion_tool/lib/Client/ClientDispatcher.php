@@ -6,6 +6,14 @@ namespace WHMCS\Module\Addon\SidnSuggestionTool\Client;
  */
 class ClientDispatcher {
 
+    /**
+     * Dispatch request.
+     *
+     * @param string $action The action to be called
+     *
+     * @return string Result from the called action
+     */
+
     public function dispatch($action)
     {
         if (!$action) {
@@ -14,7 +22,7 @@ class ClientDispatcher {
 
         $controller = new Controller();
 
-        if (is_callable(array($controller, $action))) {
+        if (is_callable([$controller, $action])) {
             return $controller->$action();
         }
     }

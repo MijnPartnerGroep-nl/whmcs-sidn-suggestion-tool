@@ -6,6 +6,13 @@ use WHMCS\Database\Capsule as DB;
 use \Sidn\Suggestion\Api\Exceptions\ApiException;
 use  \Sidn\Suggestion\Api\SidnSuggestionApiClient;
 
+/**
+ * Hook used to add required parameters to the template
+ *
+ * @param array $vars All currently defined template variables
+ * 
+ * @return array Values used in the template
+ */
 function sidnSuggestionToolClientAreaPageCartHook($vars) {
     if(strpos($_SERVER["SCRIPT_NAME"], "cart.php") !== false && isset($_GET["domain"]) && isset($_GET["query"])) {
         $path = $_SERVER["SCRIPT_NAME"];
