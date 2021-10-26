@@ -27,6 +27,6 @@
         "mijnpartnergroep-nl/sidn-suggestion-api-php": "@stable"
     },
     "config": {
-        "vendor-dir": "modules/addons/sidn_suggestion_tool/lib/vendor"
+        "vendor-dir": "lib/vendor"
     }
 }

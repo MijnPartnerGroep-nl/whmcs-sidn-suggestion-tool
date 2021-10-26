@@ -9,16 +9,7 @@ you will be provided with access to the API. The API uses the Client Authorizati
 ### Initial setup ###
 The easiest way to install this addon is by downloading the zip file from the releases and upload it's contents to the root of your WHMCS installation.
 
-Installation is also possible using composer:
-`composer require MijnPartnerGroep-nl/whmcs-sidn-suggestion-tool`
-
-Or add to your composer.json:
-
-{ 
-    "require": {
-        "MijnPartnerGroep-nl/whmcs-sidn-suggestion-tool": "@stable"
-    }
-}
+After this go to the folder using a cli to execute the following command: `composer install`, which will install the required dependensies.
 
 ### Template ###
 This module assumes the following template to be available inside the /templates/orderforms/standard_cart/domainregister.tpl or at the location for your own template:
